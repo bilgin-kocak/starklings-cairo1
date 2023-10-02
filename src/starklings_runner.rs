@@ -111,5 +111,6 @@ pub fn run_cairo_program(args: &Args) -> anyhow::Result<String> {
             ret_string.push_str(format!("Run panicked with err values: {values:?}").as_str());
         }
     }
+    println!("{ret_string}");
     Ok(ret_string)
 }
